@@ -16,9 +16,24 @@
     a:visited {
         color: @header-font-color;
     }
+    a:hover {
+        color: lighten(@header-font-color,60%);
+    }
+
 }
 
 
-.btn-style() {
-    
+.btn-style(@rad,@width,@height) {
+    width: @width;
+    height: @height;
+    .flex-col-center(row);
+    font-size: 1.9rem;
+    border-radius: @rad;
+    background: @btn-bg-color;
+    color: @wild-sand;
+    &:hover {
+        background: @wild-sand;
+        color: @ebony-clay;
+        border: 1px solid @ebony-clay;
+    }
 }

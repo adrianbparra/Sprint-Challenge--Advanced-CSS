@@ -186,6 +186,9 @@ p {
 .nav-container .nav a:visited {
   color: #23293B;
 }
+.nav-container .nav a:hover {
+  color: #bac1d6;
+}
 .nav-container .nav a {
   padding: 0 16px;
 }
@@ -240,6 +243,23 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 100px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+  border-radius: 5px;
+  background: #22283A;
+  color: #F6F6F6;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F6F6;
+  color: #23293B;
+  border: 1px solid #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
