@@ -1,1 +1,28 @@
 // Navigation code here
+.nav-container {
+    //////////makes a fixed navigation
+    position: fixed;
+    /////////////////////////////
+    width: 100%;
+    height: 100px;
+    //////////fadeout gives the background an opacity of 50%
+    background: fadeout(@nav-bg, 50%);
+    color: @nav-font;
+    border-bottom: 1px solid @nav-border;
+    .flex-col-center(column);
+
+    .title {
+        font-size: 4rem;
+        padding-bottom: 22px;
+        
+    }
+
+    .nav {
+        font-size: 1.5rem;
+        .links();
+        a {
+            padding: 0 16px;
+
+        }
+    }
+}
