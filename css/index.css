@@ -163,6 +163,9 @@ p {
 .nav-container {
   width: 100%;
   height: 100px;
+  background: #F6F6F6;
+  color: #454A59;
+  border-bottom: 1px solid #F1F1F1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,10 +176,18 @@ p {
   padding-bottom: 22px;
 }
 .nav-container .nav {
-  text-decoration: none;
+  font-size: 1.5rem;
+  color: #23293B;
 }
-.nav-container .nav:link {
+.nav-container .nav a:link {
   text-decoration: none;
+  color: #23293B;
+}
+.nav-container .nav a:visited {
+  color: #23293B;
+}
+.nav-container .nav a {
+  padding: 0 16px;
 }
 footer {
   color: #22283B;

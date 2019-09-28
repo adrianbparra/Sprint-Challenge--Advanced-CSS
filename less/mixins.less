@@ -1,15 +1,24 @@
 // Mixins Here
 
-.flex-center() {
+.flex-col-center(@direction, @justify : center, @align : center) {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
 }
 
 .links() {
-    &:link {
+    color: @header-font-color;
+    a:link {
         text-decoration: none;
+        color: @header-font-color;
     }
-    text-decoration: none;
+    a:visited {
+        color: @header-font-color;
+    }
+}
+
+
+.btn-style() {
+    
 }
